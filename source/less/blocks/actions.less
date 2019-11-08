@@ -1,0 +1,104 @@
+.actions-wrapper {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-vector {
+    color: #1B76E0;
+    font-size: 14px;
+    line-height: 19px;
+    padding-right: 15px;
+}
+
+.position-vector__name {
+    border-bottom: 1px dashed #1B76E0;
+}
+
+.position-wrapper {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.add-person,
+.export,
+.refresh {
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;   
+    padding: 13px 35px 13px 50px;
+    margin: 10px 7px;
+}
+
+.add-person__text,
+.export__text,
+.refresh__text {
+    font-weight: bold;
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.position-name {
+    color: #2E2E2E;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    padding: 13px 20px;
+    width: 280px;
+    font-size: 14px;
+    line-height: 19px;
+    position: relative;
+}
+
+.position-name::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: url("../img/chevron_right_24px.svg") no-repeat;
+    position: absolute;
+    right: 17px;
+    top: 49%;
+}
+
+.add-person__text::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../img/close_24px.svg") no-repeat;
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 8%;
+}
+
+.export__text::before {
+    content: "";
+    width: 22px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    left: -28px;
+    top: 0%;
+    background: url("../img/excel.svg") no-repeat;
+}
+
+.refresh__text::before {
+    content: "";
+    width: 17px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    left: -24px;
+    top: 0%;
+    background: url("../img/Group.svg") no-repeat;
+}
+
+.actions-control {
+    width: 510px;
+    display: flex;
+}
